@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Scrumeet</string>
+    <string name="key">Codigo de Sala</string>
+    <string name="email">Email</string>
+    <string name="isManager">Soy Team Manager / Scrum Master</string>
+    <string name="ir">Entrar</string>
+    <string name="password">Contraseña</string>
+    <string name="auth_failed"> Fallo la Autenticacion </string>
+    <string name="auth"> Inicia Sesion </string>
+
+    <string name="sign_in">Iniciar Sesion</string>
+    <string name="create_account">Crear Cuenta</string>
+    <string name="sign_out">Salir</string>
+    <string name="verify_email">Verificar Email</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="required">Requerido</string>
+    <string name="signed_in">Logueado</string>
+    <string name="signed_out">Estado: Deslogueado</string>
+    <string name="token_null">Token: null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="desc_firebase_lockup">Logo</string>
+
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email, Password</string>
+
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="newTeam">Agregar Equipo</string>
+    <string name="team_name">Nombre del Equipo</string>
+    <string name="team_key">Clave del Equipo</string>
+    <string name="team_saved">Equipo guardado exitosamente.</string>
+    <string name="create">Crear</string>
+    <string name="did">Que Hice?</string>
+    <string name="will_do">Que Hare?</string>
+    <string name="blockers">Bloqueos</string>
+
+
+</resources>

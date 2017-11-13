@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1007871456332",
+    "firebase_url": "https://scrumeet-399ac.firebaseio.com",
+    "project_id": "scrumeet-399ac",
+    "storage_bucket": "scrumeet-399ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007871456332:android:3cc7b65853023867",
+        "android_client_info": {
+          "package_name": "com.example.wawandco.scrumeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007871456332-7grvc2dvgqc7cjaioeo34o4eq5m18gdp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wawandco.scrumeet",
+            "certificate_hash": "719b79c9bf740fb3017ac167accdf194a2ae2caf"
+          }
+        },
+        {
+          "client_id": "1007871456332-o3ueccvs371uuqlv53fjr8r26d4ahngm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlE5EtTNiP5oj0gdz30gNJnV0FW5AfJ2o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007871456332-o3ueccvs371uuqlv53fjr8r26d4ahngm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
