@@ -19,7 +19,8 @@
         <activity android:name=".TeamList" />
         <activity android:name=".TeamHome" />
         <activity android:name=".CreateTeam" />
-        <activity android:name=".CreateSatusUpdate"></activity>
+        <activity android:name=".CreateSatusUpdate" />
+        <activity android:name=".UserProfile"></activity>
     </application>
 
 </manifest>

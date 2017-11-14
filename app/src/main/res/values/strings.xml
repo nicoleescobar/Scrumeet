@@ -41,6 +41,15 @@
     <string name="no_blockers">Sin bloqueos</string>
     <string name="status_added">Estado Agregado Satisfactoriamente!</string>
 
-
+    <string name="user_profile_tastes">Gustos</string>
+    <string name="user_profile_cc">CC</string>
+    <string name="user_profile_shirtSize">Talla de Camisas</string>
+    <string name="user_profile_shoesSize">Talla de Zapatos</string>
+    <string name="user_profile_patsSize">Talla de Pantalon</string>
+    <string name="user_profile_hobbies">Aficciones</string>
+    <string name="user_profile_movies">Peliculas Favoritas</string>
+    <string name="user_profile_music">Musica Favorita</string>
+    <string name="user_profile_food">Comida Favorita</string>
+    <string name="user_profile_goalsDone">Logros Desbloqueados</string>
 
 </resources>

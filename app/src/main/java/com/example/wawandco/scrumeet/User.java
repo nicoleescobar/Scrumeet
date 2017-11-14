@@ -15,19 +15,21 @@ public class User {
     private String photo;
     private String cc;
     private String name;
-    private int genere;
-    private int shirtSize;
-    private int shoesSize;
+    private String birthday;
+    private String shirtSize;
+    private String shoesSize;
 
 
-    private int pantsSize;
+    private String pantsSize;
     private String project;
-    private ArrayList<String> hobbies;
-    private ArrayList<String> movies;
-    private ArrayList<String> music;
-    private ArrayList<String> food;
-    private ArrayList<String> tastes;
-    private ArrayList<String> goalsDone;
+
+    private String hobbies;
+    private String movies;
+    private String music;
+    private String food;
+    private String tastes;
+    private String goalsDone;
+    private String country;
 
     public User(){
     }
@@ -42,12 +44,13 @@ public class User {
         this.photo = photo;
     }
 
-    public User(String id, String photo, String cc, String name, int genere, int shirtSize, int shoesSize, int pantsSize, String project, ArrayList<String> hobbies, ArrayList<String> movies, ArrayList<String> music, ArrayList<String> food, ArrayList<String> tastes, ArrayList<String> goalsDone) {
+    public User(String id, String photo, String cc, String name, String birthday, String country, String shirtSize, String shoesSize, String pantsSize, String project, String hobbies, String movies, String music, String food, String tastes, String goalsDone) {
         this.id = id;
         this.photo = photo;
         this.cc = cc;
         this.name = name;
-        this.genere = genere;
+        this.birthday = birthday;
+        this.country = country;
         this.shirtSize = shirtSize;
         this.shoesSize = shoesSize;
         this.pantsSize = pantsSize;
@@ -65,6 +68,22 @@ public class User {
         this.room = roomKey;
         this.isManager = isManagerUser;
         this.email = email;
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
     public String getId() {
@@ -124,35 +143,28 @@ public class User {
         this.name = name;
     }
 
-    public int getGenere() {
-        return genere;
-    }
 
-    public void setGenere(int genere) {
-        this.genere = genere;
-    }
-
-    public int getShirtSize() {
+    public String getShirtSize() {
         return shirtSize;
     }
 
-    public void setShirtSize(int shirtSize) {
+    public void setShirtSize(String shirtSize) {
         this.shirtSize = shirtSize;
     }
 
-    public int getShoesSize() {
+    public String getShoesSize() {
         return shoesSize;
     }
 
-    public void setShoesSize(int shoesSize) {
+    public void setShoesSize(String shoesSize) {
         this.shoesSize = shoesSize;
     }
 
-    public int getPantsSize() {
+    public String getPantsSize() {
         return pantsSize;
     }
 
-    public void setPantsSize(int pantsSize) {
+    public void setPantsSize(String pantsSize) {
         this.pantsSize = pantsSize;
     }
 
@@ -164,51 +176,51 @@ public class User {
         this.project = project;
     }
 
-    public ArrayList<String> getHobbies() {
+    public String getHobbies() {
         return hobbies;
     }
 
-    public void setHobbies(ArrayList<String> hobbies) {
+    public void setHobbies(String hobbies) {
         this.hobbies = hobbies;
     }
 
-    public ArrayList<String> getMovies() {
+    public String getMovies() {
         return movies;
     }
 
-    public void setMovies(ArrayList<String> movies) {
+    public void setMovies(String movies) {
         this.movies = movies;
     }
 
-    public ArrayList<String> getMusic() {
+    public String getMusic() {
         return music;
     }
 
-    public void setMusic(ArrayList<String> music) {
+    public void setMusic(String music) {
         this.music = music;
     }
 
-    public ArrayList<String> getFood() {
+    public String getFood() {
         return food;
     }
 
-    public void setFood(ArrayList<String> food) {
+    public void setFood(String food) {
         this.food = food;
     }
 
-    public ArrayList<String> getTastes() {
+    public String getTastes() {
         return tastes;
     }
 
-    public void setTastes(ArrayList<String> tastes) {
+    public void setTastes(String tastes) {
         this.tastes = tastes;
     }
 
-    public ArrayList<String> getGoalsDone() {
+    public String getGoalsDone() {
         return goalsDone;
     }
 
-    public void setGoalsDone(ArrayList<String> goalsDone) {
+    public void setGoalsDone(String goalsDone) {
         this.goalsDone = goalsDone;
     }
 

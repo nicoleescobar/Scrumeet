@@ -78,7 +78,7 @@ public class TeamList extends AppCompatActivity implements TeamAdapter.OnTeamCli
             Intent i = new Intent(TeamList.this,Login.class);
             startActivity(i);
         } else {
-            userEmail = currentUser.getEmail();
+            userEmail = currentUser.getEmail().toString();
         }
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();

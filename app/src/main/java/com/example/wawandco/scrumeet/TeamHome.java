@@ -149,4 +149,13 @@ public class TeamHome extends AppCompatActivity implements StatusAdapter.OnStatu
         i.putExtra("data",b);
         startActivity(i);
     }
+
+    public void goToUserProfile(View v){
+        Intent i = new Intent(TeamHome.this, UserProfile.class);
+        Bundle b = new Bundle();
+        b.putString("userId", userID);
+        b.putString("teamId", teamId);
+        i.putExtra("data",b);
+        startActivity(i);
+    }
 }
