@@ -36,6 +36,8 @@
     <string name="did">Que Hice?</string>
     <string name="will_do">Que Hare?</string>
     <string name="blockers">Bloqueos</string>
+    <string name="add_state">Nuevo Estado</string>
+    <string name="add_status">Agregar Estado</string>
 
 
 </resources>
