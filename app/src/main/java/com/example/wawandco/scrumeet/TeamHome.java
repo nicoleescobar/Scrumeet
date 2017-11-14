@@ -96,7 +96,7 @@ public class TeamHome extends AppCompatActivity implements StatusAdapter.OnStatu
                 if(dataSnapshot.exists()){
                     for(DataSnapshot snapshot:dataSnapshot.getChildren()){
                         User usr= snapshot.getValue(User.class);
-                        if (usr.getEmail().equals(userEmail)) {
+                        if (usr.getEmail().equalsIgnoreCase(userEmail)) {
                             userID = usr.getId();
                             loadUserUpdates();
                         }

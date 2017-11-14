@@ -44,6 +44,28 @@ public class User {
         this.photo = photo;
     }
 
+    public User(String id, String email, Boolean isManager, String room, String photo, String cc, String name, String birthday, String shirtSize, String shoesSize, String pantsSize, String project, String hobbies, String movies, String music, String food, String tastes, String goalsDone, String country) {
+        this.id = id;
+        this.email = email;
+        this.isManager = isManager;
+        this.room = room;
+        this.photo = photo;
+        this.cc = cc;
+        this.name = name;
+        this.birthday = birthday;
+        this.shirtSize = shirtSize;
+        this.shoesSize = shoesSize;
+        this.pantsSize = pantsSize;
+        this.project = project;
+        this.hobbies = hobbies;
+        this.movies = movies;
+        this.music = music;
+        this.food = food;
+        this.tastes = tastes;
+        this.goalsDone = goalsDone;
+        this.country = country;
+    }
+
     public User(String id, String photo, String cc, String name, String birthday, String country, String shirtSize, String shoesSize, String pantsSize, String project, String hobbies, String movies, String music, String food, String tastes, String goalsDone) {
         this.id = id;
         this.photo = photo;

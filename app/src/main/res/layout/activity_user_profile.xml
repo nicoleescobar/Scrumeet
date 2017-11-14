@@ -40,6 +40,22 @@
                 android:textAppearance="@android:style/TextAppearance.Material.Display1"
                 tools:text="Username" />
 
+            <TextView
+                android:id="@+id/user_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                tools:text="project" />
+
+            <TextView
+                android:id="@+id/user_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                tools:text="country" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -63,19 +79,6 @@
                     tools:text="birthdate" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/user_project_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:text="project" />
-
-            <TextView
-                android:id="@+id/user_country"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:text="country" />
         </LinearLayout>
 
     </LinearLayout>
@@ -90,7 +93,8 @@
             android:id="@+id/cc_lbl"
             android:layout_width="58dp"
             android:layout_height="wrap_content"
-            android:text="@string/user_profile_cc" />
+            android:text="@string/user_profile_cc"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/user_cc_value"
@@ -110,7 +114,8 @@
             android:id="@+id/tastes_lbl"
             android:layout_width="61dp"
             android:layout_height="wrap_content"
-            android:text="@string/user_profile_tastes" />
+            android:text="@string/user_profile_tastes"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/user_tastes_value"
@@ -131,7 +136,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.06"
-            android:text="@string/user_profile_shirtSize" />
+            android:text="@string/user_profile_shirtSize"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/user_shirtSize_value"
@@ -151,7 +157,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.06"
-            android:text="@string/user_profile_patsSize" />
+            android:text="@string/user_profile_patsSize"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/user_pants_value"
@@ -172,7 +179,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.06"
-            android:text="@string/user_profile_shoesSize" />
+            android:text="@string/user_profile_shoesSize"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/user_shoes_value"
@@ -193,7 +201,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.08"
-            android:text="@string/user_profile_hobbies" />
+            android:text="@string/user_profile_hobbies"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/user_hobbies_value"
@@ -214,7 +223,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.15"
-            android:text="@string/user_profile_food" />
+            android:text="@string/user_profile_food"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/user_food_value"
@@ -235,7 +245,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.09"
-            android:text="@string/user_profile_movies" />
+            android:text="@string/user_profile_movies"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/user_movies_value"
@@ -257,13 +268,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.16"
-            android:text="@string/user_profile_music" />
+            android:text="@string/user_profile_music"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/user_music_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -279,6 +292,59 @@
             android:layout_weight="1"
             android:text="@string/user_profile_goalsDone" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goals_logos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgGoal1"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgGoal2"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgGoal3"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right|end"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton4"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/pencil" />
     </LinearLayout>
 
 </LinearLayout>
