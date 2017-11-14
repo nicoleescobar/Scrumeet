@@ -2,6 +2,7 @@ package com.example.wawandco.scrumeet;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * Created by wawandco on 11/13/17.
@@ -45,6 +48,8 @@ public class StatusAdapter extends RecyclerView.Adapter<StatusAdapter.UpdateView
         holder.did.setText(s.getDid());
         holder.willDo.setText(s.getWilldo());
         holder.blockers.setText(s.getBlockers());
+        holder.photo.setImageDrawable(ResourcesCompat.getDrawable(res,Data.getPhoto(),null));
+
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +70,7 @@ public class StatusAdapter extends RecyclerView.Adapter<StatusAdapter.UpdateView
         private TextView did;
         private TextView willDo;
         private TextView blockers;
+        private CircleImageView photo;
 
 
         public UpdateViewHolder(View item){
@@ -73,6 +79,7 @@ public class StatusAdapter extends RecyclerView.Adapter<StatusAdapter.UpdateView
             did = (TextView) item.findViewById(R.id.did_value);
             willDo = (TextView) item.findViewById(R.id.will_do_value);
             blockers = (TextView) item.findViewById(R.id.blockers_value);
+            photo = (CircleImageView) item.findViewById(R.id.imgFoto);
 
         }
 

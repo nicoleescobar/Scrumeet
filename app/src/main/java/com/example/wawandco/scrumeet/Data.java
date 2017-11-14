@@ -95,4 +95,23 @@ public class Data {
         return databaseReference.push().getKey();
     }
 
+
+
+    public static int getPhoto (){
+        ArrayList<Integer> photos;
+
+        photos = new ArrayList<>();
+        photos.add(R.drawable.u1);
+        photos.add(R.drawable.u2);
+        photos.add(R.drawable.u3);
+
+        int selectedPhoto;
+        Random r = new Random();
+        selectedPhoto = r.nextInt(photos.size());
+        return photos.get(selectedPhoto);
+
+    }
+
 }
+
+

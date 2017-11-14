@@ -60,5 +60,6 @@
     <string name="user_updated">Actualizado Exitosamente</string>
 
     <string name="redirecting">Redireccionando a tu perfil</string>
+    <string name="profile">Perfil de Usuario</string>
 
 </resources>

@@ -2,6 +2,7 @@ package com.example.wawandco.scrumeet;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -122,24 +123,11 @@ public class UserProfile extends AppCompatActivity {
         cc.setText(usr.getCc());
         food.setText(usr.getFood());
 
-        if (usr.getGoalsDone() != null) {
-            goals = usr.getGoalsDone().split(",");
 
-            for (int i = 0; i > 3; i++){
-                if (goals[i].equals("1")) {
-                    Picasso.with(UserProfile.this).load(R.drawable.goal1).into(goal1);
-                }
+        goal1.setImageDrawable(ResourcesCompat.getDrawable(res,R.drawable.goal1,null));
+        goal2.setImageDrawable(ResourcesCompat.getDrawable(res,R.drawable.goal2,null));
+        goal3.setImageDrawable(ResourcesCompat.getDrawable(res,R.drawable.goal3,null));
 
-                if (goals[i].equals("2")) {
-                    Picasso.with(UserProfile.this).load(R.drawable.goal2).into(goal2);
-                }
-
-                if (goals[i].equals("3")) {
-                    Picasso.with(UserProfile.this).load(R.drawable.goal3).into(goal3);
-                }
-
-            }
-        }
 
     }
 

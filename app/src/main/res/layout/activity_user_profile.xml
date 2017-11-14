@@ -303,19 +303,19 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgGoal1"
-            android:layout_width="24dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgGoal2"
-            android:layout_width="24dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgGoal3"
-            android:layout_width="24dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp" />
     </LinearLayout>
@@ -326,16 +326,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right|end"
         android:orientation="horizontal">
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton4"
-            android:layout_width="54dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:clickable="true"
-            app:fabSize="mini"
-            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/floatingActionButton3"
