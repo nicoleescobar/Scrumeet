@@ -64,9 +64,10 @@ public class TeamHome extends AppCompatActivity implements StatusAdapter.OnStatu
 
     @Override
     public void onStatusClick(StatusUpdate userUpdates) {
-        Intent i = new Intent(TeamHome.this, TeamHome.class);
+        Intent i = new Intent(TeamHome.this, UserProfile.class);
         Bundle b = new Bundle();
-        b.putString("id", teamId);
+        b.putString("userId", userUpdates.getUserId());
+        b.putString("teamId", teamId);
         i.putExtra("data",b);
         startActivity(i);
     }

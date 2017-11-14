@@ -11,23 +11,23 @@
     <string name="sign_in">Iniciar Sesion</string>
     <string name="create_account">Crear Cuenta</string>
     <string name="sign_out">Salir</string>
-    <string name="verify_email">Verificar Email</string>
+    <string name="verify_email" translatable="false">Verificar Email</string>
     <string name="disconnect">Desconectar</string>
     <string name="required">Requerido</string>
     <string name="signed_in">Logueado</string>
     <string name="signed_out">Estado: Deslogueado</string>
-    <string name="token_null">Token: null</string>
-    <string name="hint_email">Email</string>
-    <string name="hint_password">Password</string>
+    <string name="token_null" translatable="false">Token: null</string>
+    <string name="hint_email" translatable="false">Email</string>
+    <string name="hint_password">Contraseña</string>
     <string name="desc_firebase_lockup">Logo</string>
 
 
-    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
-    <string name="emailpassword_title_text">Email, Password</string>
+    <string name="emailpassword_status_fmt" translatable="false">Email, Password</string>
+    <string name="emailpassword_title_text" translatable="false">Email, Password</string>
 
-    <string name="status_sign_in_failed">Sign-in failed</string>
-    <string name="instant_validation">(instant validation)</string>
-    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="status_sign_in_failed" translatable="false">Sign-in failed</string>
+    <string name="instant_validation" translatable="false">(instant validation)</string>
+    <string name="firebase_status_fmt" translatable="false">Firebase User: %s</string>
     <string name="newTeam">Agregar Equipo</string>
     <string name="team_name">Nombre del Equipo</string>
     <string name="team_key">Clave del Equipo</string>
@@ -44,7 +44,7 @@
 
 
     <string name="user_profile_tastes">Gustos</string>
-    <string name="user_profile_cc">CC</string>
+    <string name="user_profile_cc" translatable="false">CC</string>
     <string name="user_profile_shirtSize">Talla de Camisas</string>
     <string name="user_profile_shoesSize">Talla de Zapatos</string>
     <string name="user_profile_patsSize">Talla de Pantalon</string>
@@ -53,5 +53,12 @@
     <string name="user_profile_music">Musica Favorita</string>
     <string name="user_profile_food">Comida Favorita</string>
     <string name="user_profile_goalsDone">Logros Desbloqueados</string>
+    <string name="username">Nombre</string>
+    <string name="country">Pais</string>
+    <string name="birthday">Fecha de Nacimiento</string>
+    <string name="actualizar">actualizar</string>
+    <string name="user_updated">Actualizado Exitosamente</string>
+
+    <string name="redirecting">Redireccionando a tu perfil</string>
 
 </resources>

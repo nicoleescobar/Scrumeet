@@ -20,7 +20,8 @@
         <activity android:name=".TeamHome" />
         <activity android:name=".CreateTeam" />
         <activity android:name=".CreateSatusUpdate" />
-        <activity android:name=".UserProfile"></activity>
+        <activity android:name=".UserProfile" />
+        <activity android:name=".UserProfileEdit"></activity>
     </application>
 
 </manifest>

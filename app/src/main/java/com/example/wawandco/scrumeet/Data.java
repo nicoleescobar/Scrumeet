@@ -42,7 +42,7 @@ public class Data {
         return databaseReference.push().getKey();
     }
 
-    public static void update(User usr ){
+    public static void updateUser(User usr ){
         databaseReference.child(usersReference).child(usr.getId()).setValue(usr);
     }
     public static void delete(User usr){

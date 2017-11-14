@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -27,6 +28,8 @@ public class UserProfile extends AppCompatActivity {
     private FirebaseAuth mAuth;
     String userID;
     String teamId;
+    String userEmail;
+    String currentUserID;
 
     private Bundle b;
     private Intent i;
@@ -120,7 +123,7 @@ public class UserProfile extends AppCompatActivity {
         food.setText(usr.getFood());
 
         if (usr.getGoalsDone() != null) {
-            goals = usr.getGoalsDone().split(" , ");
+            goals = usr.getGoalsDone().split(",");
 
             for (int i = 0; i > 3; i++){
                 if (goals[i].equals("1")) {
@@ -128,7 +131,7 @@ public class UserProfile extends AppCompatActivity {
                 }
 
                 if (goals[i].equals("2")) {
-                    Picasso.with(UserProfile.this).load(R.drawable.goal2).into(goal3);
+                    Picasso.with(UserProfile.this).load(R.drawable.goal2).into(goal2);
                 }
 
                 if (goals[i].equals("3")) {
@@ -138,8 +141,64 @@ public class UserProfile extends AppCompatActivity {
             }
         }
 
+    }
 
+    public void  gotoUpdateUser(View v){
+        if (currentUserID.equals(userID)){
+            Intent i = new Intent(UserProfile.this, UserProfileEdit.class);
+            Bundle b = new Bundle();
+            b.putString("userId", userID);
+            b.putString("teamId", teamId);
+            i.putExtra("data",b);
+            startActivity(i);
+        } else {
+            Intent i = new Intent(UserProfile.this, UserProfileEdit.class);
+            Bundle b = new Bundle();
+            b.putString("userId", currentUserID);
+            b.putString("teamId", teamId);
+            i.putExtra("data",b);
+            startActivity(i);
+            Toast.makeText(UserProfile.this, R.string.redirecting,Toast.LENGTH_SHORT).show();
 
+        }
 
     }
+
+    @Override
+    public void onStart() {
+
+        final String[] result = new String[1];
+
+
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            userEmail = currentUser.getEmail().toString();
+        }
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference dbReference = database.getReference("Users");
+
+        dbReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()){
+                    for(DataSnapshot snapshot:dataSnapshot.getChildren()){
+                        User usr= snapshot.getValue(User.class);
+                        if (usr.getEmail().equals(userEmail)) {
+                            currentUserID = usr.getId();
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                Log.w("getusers", "Failed to read value.", error.toException());
+            }
+
+        });
+
+    }
+
 }

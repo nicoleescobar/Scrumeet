@@ -248,7 +248,7 @@ public class User {
 
     public void guardar(){Data.saveUser(this);}
 
-    public void modificar(){Data.update(this);}
+    public void update(){Data.updateUser(this);}
 
     public void eliminar(){Data.delete(this);}
 

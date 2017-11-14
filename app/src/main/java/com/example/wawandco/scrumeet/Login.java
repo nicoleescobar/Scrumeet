@@ -211,6 +211,7 @@ public class Login extends AppCompatActivity  implements View.OnClickListener, C
                             Toast.makeText(Login.this, R.string.auth,Toast.LENGTH_SHORT).show();
                             mStatusTextView.setText("");
                             room.setError(null);
+                            break;
                         } else {
                             Toast.makeText(Login.this, R.string.auth_failed,Toast.LENGTH_SHORT).show();
                             mStatusTextView.setText(R.string.auth_failed);
