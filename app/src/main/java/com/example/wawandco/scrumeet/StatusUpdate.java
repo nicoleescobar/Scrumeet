@@ -83,4 +83,7 @@ public class StatusUpdate {
     public void setBlockers(String blockers) {
         this.blockers = blockers;
     }
+
+    public void saveNewStatus(){Data.saveStatusUpdate(this);}
+
 }

@@ -47,11 +47,13 @@ public class TeamHome extends AppCompatActivity implements StatusAdapter.OnStatu
 
         i = getIntent();
         b = i.getBundleExtra("data");
-        teamId = b.get("id").toString();
 
-        Log.e("console", "id: "+teamId);
+        if (b != null){
+            teamId = b.get("teamId").toString();
+        }
 
-                userUpdates = new ArrayList<>();
+
+        userUpdates = new ArrayList<>();
         adapter = new StatusAdapter(this.getApplicationContext(), userUpdates, this);
         llm = new LinearLayoutManager(this);
         updatesList.setLayoutManager(llm);
@@ -64,7 +66,7 @@ public class TeamHome extends AppCompatActivity implements StatusAdapter.OnStatu
     public void onStatusClick(StatusUpdate userUpdates) {
         Intent i = new Intent(TeamHome.this, TeamHome.class);
         Bundle b = new Bundle();
-        b.putString("id", userID);
+        b.putString("id", teamId);
         i.putExtra("data",b);
         startActivity(i);
     }
@@ -137,5 +139,14 @@ public class TeamHome extends AppCompatActivity implements StatusAdapter.OnStatu
             }
         });
 
+    }
+
+    public void goToNewStatus(View v){
+        Intent i = new Intent(TeamHome.this, CreateSatusUpdate.class);
+        Bundle b = new Bundle();
+        b.putString("id", userID);
+        b.putString("teamId", teamId);
+        i.putExtra("data",b);
+        startActivity(i);
     }
 }

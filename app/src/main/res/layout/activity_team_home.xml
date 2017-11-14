@@ -6,22 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+    <include
+        layout="@layout/updates_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="16dp"
         android:layout_marginRight="16dp"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:layout_anchorGravity="bottom|right|end"
-        app:srcCompat="@drawable/user"
-        tools:ignore="RtlHardcoded" />
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
 
-    <include
-        layout="@layout/updates_list_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="goToNewStatus"
+            app:fabSize="normal"
+            app:layout_anchorGravity="bottom|right|end"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

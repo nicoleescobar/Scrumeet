@@ -38,6 +38,9 @@
     <string name="blockers">Bloqueos</string>
     <string name="add_state">Nuevo Estado</string>
     <string name="add_status">Agregar Estado</string>
+    <string name="no_blockers">Sin bloqueos</string>
+    <string name="status_added">Estado Agregado Satisfactoriamente!</string>
+
 
 
 </resources>

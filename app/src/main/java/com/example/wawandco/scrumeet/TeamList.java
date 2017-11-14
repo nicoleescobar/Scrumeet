@@ -55,7 +55,7 @@ public class TeamList extends AppCompatActivity implements TeamAdapter.OnTeamCli
     public void onTeamClick(Team t) {
         Intent i = new Intent(TeamList.this,TeamHome.class);
         Bundle b = new Bundle();
-        b.putString("id",t.getId());
+        b.putString("teamId",t.getId());
         i.putExtra("data",b);
         startActivity(i);
 
